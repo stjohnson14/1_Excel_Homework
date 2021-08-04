@@ -10,6 +10,8 @@ Please read on for a detailed overview of the steps I took to complete this proj
 
 --Initial formatting--
 
+![pic 1](https://user-images.githubusercontent.com/84537717/128248872-527a6398-228c-4075-8e1a-bbabf3d06b9b.png)
+
 I used condtional formatting to fill each cell in the "state" column with a different color, depending on whether the associated campaign was successful, failed, or canceled, or is currently live.
 I created a new column O called "Percent Funded" that uses a formula to display how much money a campaign made to reach its initial goal.
 
@@ -25,9 +27,13 @@ Created a new sheet with a pivot table to analyze how many campaigns were succes
 
 Created a stacked column pivot chart that can be filtered by country.
 
+![pivot_country](https://user-images.githubusercontent.com/84537717/128251221-8cca3891-3615-4f8f-b2f4-91e77338769a.PNG)
+
 Created a new sheet with a pivot table to analyze initial worksheet and count how many campaigns were successful, failed, or canceled, or are currently live per sub-category.
 
-Created a stacked column pivot chart that can be filtered by country and category.
+Created a stacked column pivot chart that can be filtered by country and sub-category.
+
+![new pic 2](https://user-images.githubusercontent.com/84537717/128249299-87ecb40c-5d18-451b-9ecb-efa264191574.PNG)
 
 In "Launched" column, converted Unix timestamps to normal date via a formula and then stored values in a new column named "Date Created Conversion".
 
@@ -36,6 +42,8 @@ In "Deadline" column, used same formula as above to convert Unix timestamps and 
 Created a new sheet with a pivot table with a column of `state`, rows of "Date Created Conversion", values based on the count of "state", and filters based on "parent category" and "years".
 
 Created a pivot chart line graph to visualizes this new table.
+
+![dates](https://user-images.githubusercontent.com/84537717/128251565-2907abdd-649b-48ad-b823-117b4bc79d48.PNG)
 
 Created a new sheet with 8 columns:
 
@@ -69,6 +77,8 @@ Summed up each of the values in succesful, failed, and canceled columns to popul
 
 Created a line chart that graphs the relationship between a goal's amount and its chances at success, failure, or cancellation.
 
+![outcome_linegraph](https://user-images.githubusercontent.com/84537717/128251950-69c33dc3-f4bc-4727-889b-5f32ef8521d6.PNG)
+
 --Summary Statistics Table--
 
 Evaluated the following for successful campaigns, and then for unsuccessful campaigns:
@@ -85,4 +95,4 @@ Evaluated the following for successful campaigns, and then for unsuccessful camp
 
   * The standard deviation of the # of backers.
 
-I also provided some analysis on my findings within the excel worksheet.  
+I also provided some analysis on my findings within the excel worksheet:
